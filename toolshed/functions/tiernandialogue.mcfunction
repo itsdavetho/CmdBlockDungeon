@@ -1,0 +1,1 @@
+tellraw @a[x=4858,y=15,z=-3510,dx=4,dy=3,dz=3] "Tiernan: Thank you adventurer! My tools have been returned... I may now rest in peace"

@@ -1,0 +1,5 @@
+give @s written_book{tiernansjournal: 1, pages:['{"text":"Minecraft 26/01/1678 lost tools\\n-------------------\\nI\'ve really done it this time ... Master says I\'ve lost all the tools ... They should be right there where I left them in the tool shed! I must be going crazy ... Everyone\'s sure been acting strange lately ...\\nMaster said he would have me \\"replaced\\"... Tools book"}','{"text":"cont.\\n-------------------\\nand we all know what that means .. 3 of us have gone missing this week alone!...\\nI\'m so afraid. Who will take care of Wilfred?\\nI\'ll never be able to forgive myself.... This is all my fault\\n\\nThe tools I lost were"}','{"text":"1: a diamond pickaxe\\n2: a stone axe\\n3: an iron hoe\\n4: my fishing rod\\n"}'],title:"Tiernans Journal",author:"Tiernan the Toolman",display:{Lore:["he seems pretty upset"]}}
+tellraw @s "I should probably take a copy of this.."
+
+# command block
+# execute if block 4814 16 -3508 minecraft:lectern{Page:2} unless entity @p[ nbt= { Inventory: [ { tag: {tiernansjournal: 1}  } ] } ] as @p run function tiernanshouse:takejournal

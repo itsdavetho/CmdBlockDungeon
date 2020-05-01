@@ -1,0 +1,2 @@
+execute if block 4845 7 -3566 minecraft:spruce_trapdoor[open=true] unless entity @s[ nbt= { Inventory: [ { tag: {garzonstrident: 1}  } ] } ] unless entity @e[name="Sir Garzon"] as @s run function graveyard:summongarzon
+execute if entity @e[name="Sir Garzon"] run data modify block 4844 6 -3568 Page set value 0
