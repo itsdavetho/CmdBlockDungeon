@@ -1,5 +1,5 @@
 # place the "Game In Progress" sign
-clone 4806 15 -3583 4806 15 -3583 
+clone 4806 15 -3583 4806 15 -3583 4804 20 -3580 replace
 
 # remove the pressure plates 
 setblock 4805 19 -3580 air
