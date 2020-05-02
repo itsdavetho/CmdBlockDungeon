@@ -1,0 +1,3 @@
+summon skeleton 4836 2 -3537 {CanPickUpLoot:1b,HandItems:[{Count:1,id:iron_axe,tag:{Enchantments:[{id:sharpness,lvl:5},{id:efficiency,lvl:5},{id:unbreaking,lvl:3},{id:fortune,lvl:3}]}},{}],ArmorItems:[{},{},{},{Count:1,id:wither_skeleton_skull}],CustomName:"\"Bartok's #3\"",HandDropChances:[0.1f,0.0f],ActiveEffects:[{Id:1,Amplifier:1,Duration:999999},{Id:5,Amplifier:1,Duration:999999},{Id:8,Amplifier:0,Duration:999999},{Id:10,Amplifier:1,Duration:999999},{Id:22,Amplifier:0,Duration:999999}]}
+particle minecraft:smoke 4836 2 -3537 2 2 2 1 200
+setblock 4831 11 -3542 diorite

@@ -1,9 +1,9 @@
-scoreboard players set @s tiernanoil 0
-scoreboard players set @s tiernanspick 0
-scoreboard players set @s tiernansaxe 0
-scoreboard players set @s tiernanshoe 0
-scoreboard players set @s tiernansrod 0
-scoreboard players set @s garzonkilled 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanoil 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanspick 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansaxe 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanshoe 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansrod 0
+scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] garzonkilled 0
 
 #close the fountain
 execute run fill 4845 6 -3541 4843 4 -3543 stone replace
@@ -45,3 +45,15 @@ setblock 4845 7 -3566 minecraft:spruce_trapdoor[open=false,facing=north,half=bot
 # reset lecterns
 data modify block 4844 6 -3568 Page set value 0
 data modify block 4814 16 -3508 Page set value 0
+
+# make some loot
+# long house
+data modify block 4834 12 -3512 Items set value [{Slot:0, id: arrow, Count: 8}, {Slot:2,id:cooked_porkchop,Count:2}]
+data modify block 4837 12 -3508 Items set value [{Slot:0, id: arrow, Count: 10}]
+
+# tiernans house
+data modify block 4818 19 -3512 Items set value [{Slot:0, id: arrow, Count: 6}, {Slot:1, id: bread, Count: 3}]
+data modify block 4809 20 -3523 Items set value [{Slot:6, id: brown_mushroom, Count:4}, {Slot: 3, id: red_mushroom, Count: 3}, {Slot: 1, id: bowl, Count: 3}, {Slot: 7, id: mushroom_stew, Count: 2}]
+
+# burnt house
+data modify block 4815 16 -3508 Items set value [{Slot:0, id: cooked_salmon, Count: 3}, {Slot: 5, id: iron_ingot, Count: 6}]
