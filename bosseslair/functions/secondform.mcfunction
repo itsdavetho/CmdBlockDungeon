@@ -1,4 +1,5 @@
 summon zombie 4830 3 -3543 {HandItems:[{Count:1,id:diamond_sword,tag:{Enchantments:[{id:sharpness,lvl:5},{id:knockback,lvl:2},{id:looting,lvl:3},{id:unbreaking,lvl:3}]}},{Count:1,id:shield,tag:{Enchantments:[{id:unbreaking,lvl:3}]}}],ArmorItems:[{Count:1,id:diamond_boots,tag:{Enchantments:[{id:protection,lvl:2},{id:feather_falling,lvl:4},{id:unbreaking,lvl:3}]}},{Count:1,id:diamond_leggings,tag:{Enchantments:[{id:protection,lvl:1},{id:unbreaking,lvl:3}]}},{Count:1,id:golden_chestplate,tag:{Enchantments:[{id:protection,lvl:3},{id:unbreaking,lvl:3}]}},{Count:1,id:wither_skeleton_skull}],CustomName:"\"Bartok the Zombie\"",HandDropChances:[1.0f,1.0f],ActiveEffects:[{Id:1,Amplifier:1,Duration:999999},{Id:5,Amplifier:1,Duration:999999},{Id:10,Amplifier:1,Duration:999999},{Id:22,Amplifier:0,Duration:999999}]}
 particle minecraft:smoke 4830 3 -3543 2 2 2 1 200
+playsound minecraft:block.portal.travel player @s 4830 3 -3543 1 2 1
 tellraw @s "Bartok shifted forms into a zombie!"
 scoreboard players set @s level1boss 2

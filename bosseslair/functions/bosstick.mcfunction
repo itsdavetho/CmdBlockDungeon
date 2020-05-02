@@ -11,3 +11,4 @@ execute if entity @e[name="Bartok the Fish"] unless entity @e[name="Bartok's #2"
 execute if entity @e[name="Bartok the Fish"] unless entity @e[name="Bartok's #3"] if block 4831 11 -3542 diorite run setblock 4831 11 -3542 dirt
 
 execute unless entity @e[name="Bartok the Fish"] if score @s level1boss matches 1 as @s run function bosseslair:secondform
+# execute unless entity @e[name="Bartok the Zombie"] if score @s level1boss matches 2 as @s run function bosseslair:thirdform

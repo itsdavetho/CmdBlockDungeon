@@ -1,11 +1,22 @@
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanoil 0
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanspick 0
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansaxe 0
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanshoe 0
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansrod 0
-scoreboard players set @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] garzonkilled 0
+# reset all players in the arena scores
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanoil
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanspick
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansaxe
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanshoe
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansrod
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] garzonkilled
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] level1boss
 
-#close the fountain
+# kill any special mobs
+kill @e[name="Tiernan"]
+kill @e[name="Sir Garzon"]
+kill @e[name="Bartok the Zombie"]
+kill @e[name="Bartok the Fish"]
+kill @e[name="Bartok's #3"]
+kill @e[name="Bartok's #2"]
+kill @e[name="Bartok's #1"]
+
+# close the fountain
 execute run fill 4845 6 -3541 4843 4 -3543 stone replace
 execute if block 4842 2 -3542 minecraft:redstone_torch run setblock 4842 2 -3542 air
 
@@ -22,7 +33,6 @@ data modify block 4866 12 -3527 Items set value []
 execute if block 4846 14 -3572 air run fill 4843 15 -3573 4846 14 -3572 grass_block replace
 
 # tool shed
-kill @e[name="Tiernan"]
 # turn off the lights
 fill 4859 14 -3509 4860 14 -3509 minecraft:air
 #open the door
@@ -57,3 +67,13 @@ data modify block 4809 20 -3523 Items set value [{Slot:6, id: brown_mushroom, Co
 
 # burnt house
 data modify block 4815 16 -3508 Items set value [{Slot:0, id: cooked_salmon, Count: 3}, {Slot: 5, id: iron_ingot, Count: 6}]
+
+# send all players to the lobby
+tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4801 20 -3598
+
+# "open" the doors
+setblock 4805 19 -3580 minecraft:light_weighted_pressure_plate
+setblock 4806 19 -3580 minecraft:light_weighted_pressure_plate
+
+# place the "Game Ready" sign
+clone 4807 15 -3583 4807 15 -3583 4804 20 -3580 replace
