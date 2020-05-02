@@ -5,6 +5,9 @@ clone 4806 15 -3583 4806 15 -3583 4804 20 -3580 replace
 setblock 4805 19 -3580 air
 setblock 4806 19 -3580 air
 
+# set the players spawn point
+execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run spawnpoint @s 4810 17 -3574
+
 # inform the player the game is now in Progress
 tellraw @s "Sorry friend, this game is in progress!"
 

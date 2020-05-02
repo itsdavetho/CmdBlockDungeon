@@ -6,15 +6,21 @@ scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernanshoe
 scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] tiernansrod
 scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] garzonkilled
 scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] level1boss
+scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] dungeonDeaths
+
+# change their spawn back
+execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run spawnpoint @s -157 8 -22
 
 # kill any special mobs
 kill @e[name="Tiernan"]
 kill @e[name="Sir Garzon"]
 kill @e[name="Bartok the Zombie"]
 kill @e[name="Bartok the Fish"]
+kill @e[name="Bartok the Illusioner"]
 kill @e[name="Bartok's #3"]
 kill @e[name="Bartok's #2"]
 kill @e[name="Bartok's #1"]
+kill @e[name="Garzon's Pal"]
 
 # close the fountain
 execute run fill 4845 6 -3541 4843 4 -3543 stone replace
@@ -56,24 +62,30 @@ setblock 4845 7 -3566 minecraft:spruce_trapdoor[open=false,facing=north,half=bot
 data modify block 4844 6 -3568 Page set value 0
 data modify block 4814 16 -3508 Page set value 0
 
-# destroy the reward chests
+# destroy the reward loot chests
 setblock 4831 3 -3544 air
 setblock 4831 3 -3540 air
 
-# make some loot
+# set some loot boxes (chests, barrels etc)
 # long house
-data modify block 4834 12 -3512 Items set value [{Slot:0, id: arrow, Count: 8}, {Slot:2,id:cooked_porkchop,Count:2}]
-data modify block 4837 12 -3508 Items set value [{Slot:0, id: arrow, Count: 10}]
+clone 4791 9 -3593 4791 9 -3593 4834 12 -3512 replace
+clone 4789 9 -3591 4789 9 -3591 4837 12 -3508 replace
 
 # tiernans house
-data modify block 4818 19 -3512 Items set value [{Slot:0, id: arrow, Count: 6}, {Slot:1, id: bread, Count: 3}]
-data modify block 4809 20 -3523 Items set value [{Slot:6, id: brown_mushroom, Count:4}, {Slot: 3, id: red_mushroom, Count: 3}, {Slot: 1, id: bowl, Count: 3}, {Slot: 7, id: mushroom_stew, Count: 2}]
+clone 4795 9 -3589 4795 9 -3589 4815 16 -3508 replace
+clone 4789 9 -3589 4789 9 -3589 4818 19 -3512 replace
+
+# allisters house
+clone 4792 8 -3589 4792 8 -3589 4874 19 -3537 replace
+
+# old shop
+clone 4792 9 -3593 4792 9 -3593 4876 16 -3557 replace
 
 # burnt house
-data modify block 4815 16 -3508 Items set value [{Slot:0, id: cooked_salmon, Count: 3}, {Slot: 5, id: iron_ingot, Count: 6}]
+clone 4794 9 -3589 4794 9 -3589 4809 20 -3523 replace
 
 # send all players to the lobby
-tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4807 21 -3597 48.8 -16.5
+tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4807 21 -3597 45 0
 
 # "open" the doors
 setblock 4805 19 -3580 minecraft:light_weighted_pressure_plate

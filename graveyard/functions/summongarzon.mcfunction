@@ -6,15 +6,15 @@ execute unless entity @e[name="Sir Garzon"] run particle minecraft:smoke 4843 7 
 # play a sound
 execute unless entity @e[name="Sir Garzon"] run playsound minecraft:block.end_portal.spawn block @s 4843 7 -3566 1 0.1 1
 
+# make some spiders (the coffin was full of em)
+execute unless entity @e[name="Sir Garzon"] run summon minecraft:cave_spider 4842 6 -3568 {CustomName:"\"Garzon's Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] run summon minecraft:cave_spider 4844 6 -3563 {CustomName:"\"Garzon's Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] run summon minecraft:cave_spider 4841 6 -3565 {CustomName:"\"Garzon's Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] run summon minecraft:cave_spider 4847 6 -3564 {CustomName:"\"Garzon's Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] run tellraw @s "His coffin was full of POISON SPIDERS! Ahhhh!!!!!!!"
+
 # summon him
 execute unless entity @e[name="Sir Garzon"] run summon zombie_pigman 4843 7 -3566 {Rotation:[-159.7f,39.3f], Anger:1000,CanPickUpLoot:1b,HandItems:[{Count:1,id:diamond_sword,tag:{Enchantments:[{id:sharpness,lvl:1},{id:knockback,lvl:1},{id:unbreaking,lvl:3}]}},{Count:1,id:trident,tag:{garzonstrident: 1, display:{Name:"\"Sir Garzon's Trident of Reveal\"",Lore:["\"This trident will help you on your way.\""]},Enchantments:[{id:unbreaking,lvl:3},{id:loyalty,lvl:3},{id:riptide,lvl:3}]}}],ArmorItems:[{Count:1,id:diamond_boots},{Count:1,id:diamond_leggings},{Count:1,id:diamond_chestplate},{Count:1,id:diamond_helmet}],CustomName:"\"Sir Garzon\"",HandDropChances:[0.0f,1.0f],ActiveEffects:[{Id:5,Amplifier:1,Duration:999999},{Id:11,Amplifier:0,Duration:999999},{Id:21,Amplifier:0,Duration:999999}]}
 
 # queue coffin close (hopefully preventing him from immediately spawning again)
 execute run schedule function graveyard:closecoffin 3s
-
-# make some spiders (the coffin was full of em)
-execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #1 Pal"] run summon minecraft:cave_spider 4842 6 -3568 {CustomName:"\"Garzon's #1 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
-execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #2 Pal"] run summon minecraft:cave_spider 4844 6 -3563 {CustomName:"\"Garzon's #2 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
-execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #3 Pal"] run summon minecraft:cave_spider 4841 6 -3565 {CustomName:"\"Garzon's #3 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
-execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #4 Pal"] run summon minecraft:cave_spider 4847 6 -3564 {CustomName:"\"Garzon's #4 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
-execute unless entity @e[name="Sir Garzon"] run tellraw @s "His coffin was full of POISON SPIDERS! Ahhhh!!!!!!!"
