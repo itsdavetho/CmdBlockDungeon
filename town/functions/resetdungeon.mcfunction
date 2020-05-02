@@ -61,9 +61,19 @@ execute run clear @s minecraft:iron_hoe{tiernanshoe: 1}
 #close coffin
 setblock 4845 7 -3566 minecraft:spruce_trapdoor[open=false,facing=north,half=bottom,powered=false]
 
-# reset (important) lecterns
-data modify block 4844 6 -3568 Page set value 0
-data modify block 4814 16 -3508 Page set value 0
+# reset lecterns
+# burnt house
+clone 4810 9 -3523 4810 9 -3523 4810 20 -3523 replace
+# tiernans house
+clone 4814 13 -3508 4814 13 -3508 4814 16 -3508 replace
+# allisters house
+clone 4870 11 -3544 4870 11 -3544 4874 19 -3541 replace
+# church upstairs
+clone 4881 21 -3531 4881 21 -3531 4873 21 -3526
+# church downstairs
+clone 4882 21 -3529 4882 21 -3529 4875 15 -3527
+# graveyard
+clone 4840 3 -3564 4840 3 -3564 4844 6 -3569
 
 # destroy the reward loot chests
 setblock 4831 3 -3544 air
