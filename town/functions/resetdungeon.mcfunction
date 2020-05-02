@@ -91,5 +91,8 @@ tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4807 21 -3597 45 0
 setblock 4805 19 -3580 minecraft:light_weighted_pressure_plate
 setblock 4806 19 -3580 minecraft:light_weighted_pressure_plate
 
+# put the button for bartok back
+setblock 4831 4 -3542 minecraft:stone_button[face=floor,facing=west,powered=false]
+
 # place the "Game Ready" sign
 clone 4807 15 -3583 4807 15 -3583 4804 20 -3580 replace

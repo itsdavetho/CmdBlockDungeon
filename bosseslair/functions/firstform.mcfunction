@@ -3,3 +3,4 @@ execute unless entity @e[name="Bartok the Fish"] run playsound minecraft:item.fi
 execute unless entity @e[name="Bartok the Fish"] run tellraw @s "The ancient being Bartok appears... in the form of a fish??"
 execute unless entity @e[name="Bartok the Fish"] run scoreboard players set @s level1boss 1
 execute unless entity @e[name="Bartok the Fish"] run summon guardian 4826 4 -3542 {PersistenceRequired:1,CustomName:"\"Bartok the Fish\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999},{Id:5,Amplifier:1,Duration:999999},{Id:8,Amplifier:0,Duration:999999},{Id:10,Amplifier:1,Duration:999999},{Id:21,Amplifier:0,Duration:999999}]}
+setblock 4831 4 -3542 air
