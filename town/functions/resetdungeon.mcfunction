@@ -21,6 +21,9 @@ kill @e[name="Bartok's #3"]
 kill @e[name="Bartok's #2"]
 kill @e[name="Bartok's #1"]
 kill @e[name="Garzon's Pal"]
+kill @e[name="Bartok's Zombie"]
+kill @e[name="Bartok's Skelly"]
+kill @e[name="Bartok's Creeper"]
 
 # close the fountain
 execute run fill 4845 6 -3541 4843 4 -3543 stone replace
