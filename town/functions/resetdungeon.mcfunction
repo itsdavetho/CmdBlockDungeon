@@ -52,9 +52,13 @@ execute run clear @s minecraft:iron_hoe{tiernanshoe: 1}
 #close coffin
 setblock 4845 7 -3566 minecraft:spruce_trapdoor[open=false,facing=north,half=bottom,powered=false]
 
-# reset lecterns
+# reset (important) lecterns
 data modify block 4844 6 -3568 Page set value 0
 data modify block 4814 16 -3508 Page set value 0
+
+# destroy the reward chests
+setblock 4831 3 -3544 air
+setblock 4831 3 -3540 air
 
 # make some loot
 # long house
@@ -69,7 +73,7 @@ data modify block 4809 20 -3523 Items set value [{Slot:6, id: brown_mushroom, Co
 data modify block 4815 16 -3508 Items set value [{Slot:0, id: cooked_salmon, Count: 3}, {Slot: 5, id: iron_ingot, Count: 6}]
 
 # send all players to the lobby
-tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4801 20 -3598
+tp @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] 4807 21 -3597 48.8 -16.5
 
 # "open" the doors
 setblock 4805 19 -3580 minecraft:light_weighted_pressure_plate

@@ -11,3 +11,10 @@ execute unless entity @e[name="Sir Garzon"] run summon zombie_pigman 4843 7 -356
 
 # queue coffin close (hopefully preventing him from immediately spawning again)
 execute run schedule function graveyard:closecoffin 3s
+
+# make some spiders (the coffin was full of em)
+execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #1 Pal"] run summon minecraft:cave_spider 4842 6 -3568 {CustomName:"\"Garzon's #1 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #2 Pal"] run summon minecraft:cave_spider 4844 6 -3563 {CustomName:"\"Garzon's #2 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #3 Pal"] run summon minecraft:cave_spider 4841 6 -3565 {CustomName:"\"Garzon's #3 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] execute unless entity @e[name="Garzon's #4 Pal"] run summon minecraft:cave_spider 4847 6 -3564 {CustomName:"\"Garzon's #4 Pal\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999}]}
+execute unless entity @e[name="Sir Garzon"] run tellraw @s "His coffin was full of POISON SPIDERS! Ahhhh!!!!!!!"
