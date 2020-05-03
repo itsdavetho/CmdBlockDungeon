@@ -1,7 +1,7 @@
 tp @e[name="Tiernan"] ~ ~-200 ~
 kill @e[name="Tiernan"]
 particle minecraft:smoke 4860 15 -3510 1 1 1 1 100
-playsound minecraft:entity.evoker.prepare_summon block @p 4860 16 -3510 1 1 1
+playsound minecraft:entity.evoker.prepare_summon block @s 4860 16 -3510 1 1 1
 
 # turn off the lights
 fill 4859 14 -3509 4860 14 -3509 minecraft:air

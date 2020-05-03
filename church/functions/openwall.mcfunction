@@ -1,5 +1,5 @@
 # play a sound
-execute if block 4865 17 -3527 iron_block run playsound minecraft:entity.lightning_bolt.thunder player @p ~ ~ ~ 0.5 0.1 0.5
+execute if block 4865 17 -3527 iron_block run playsound minecraft:entity.lightning_bolt.thunder player @s ~ ~ ~ 0.5 0.1 0.5
 
 # make some particles
 execute if block 4865 17 -3527 iron_block run particle minecraft:explosion 4865 15 -3526 2 2 2 1 10

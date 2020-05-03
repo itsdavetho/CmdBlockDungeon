@@ -11,4 +11,4 @@ execute if block 4846 14 -3572 air run fill 4843 15 -3573 4846 14 -3572 grass_bl
 setblock 4845 7 -3566 minecraft:spruce_trapdoor[open=false,facing=north,half=bottom,powered=false]
 
 # command block
-# execute if entity @p[x=4839,y=16,z=-3566,dx=2,dy=3,dz=2] run say hi
+# execute if entity @s[x=4839,y=16,z=-3566,dx=2,dy=3,dz=2] run say hi

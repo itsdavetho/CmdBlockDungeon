@@ -16,5 +16,7 @@ execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run scoreboard objectives
 # inform the player the game is now in Progress
 tellraw @s "Sorry friend, this game is in progress!"
 
+function town:numberplayers
+
 # command block
 # execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] if block 4805 19 -3580 minecraft:light_weighted_pressure_plate run function town:gameinprogress

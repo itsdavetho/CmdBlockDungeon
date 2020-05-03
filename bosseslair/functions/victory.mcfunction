@@ -7,7 +7,7 @@ execute run fill 4845 6 -3541 4843 4 -3543 water destroy
 
 # place the loot
 clone 4793 9 -3593 4793 9 -3593 4831 3 -3544 replace
-clone 4793 9 -3589 4793 9 -3589 4831 3 -3540 replace
+clone 4802 16 -3575 4802 16 -3575 4831 3 -3540 replace
 
 # make some fireworks
 summon firework_rocket 4829 1 -3549 {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:3,Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;11743532,2437522,2651799,14188952,4312372,6719955,12801229,15435844],FadeColors:[I;1973019,3887386,8073150,14602026]}]}}}}

@@ -1,8 +1,8 @@
 execute unless block 4845 6 -3541 stone run tellraw @s "The fountain seals back up..."
 execute unless block 4845 6 -3541 stone run playsound minecraft:entity.blaze.ambient player @s 4844 3 -3542 1 0.1 1
-execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @p 4844 3 -3542 1 0.1 1
-execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @p 4844 3 -3542 1 0.1 1
-execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @p 4844 3 -3542 1 0.1 1
+execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @s 4844 3 -3542 1 0.1 1
+execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @s 4844 3 -3542 1 0.1 1
+execute unless block 4845 6 -3541 stone run playsound minecraft:block.stone.place player @s 4844 3 -3542 1 0.1 1
 execute run fill 4845 6 -3541 4843 4 -3543 stone replace
 execute if block 4842 2 -3542 minecraft:redstone_torch run setblock 4842 2 -3542 air
 
