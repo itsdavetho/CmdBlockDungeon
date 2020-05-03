@@ -8,6 +8,10 @@ scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] garzonkille
 scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] level1boss
 scoreboard players reset @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] dungeonDeaths
 
+# 
+team leave @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
+scoreboard objectives setdisplay sidebar.team.red
+
 # change their spawn back
 execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run spawnpoint @s -157 8 -22
 
@@ -76,8 +80,8 @@ clone 4882 21 -3529 4882 21 -3529 4875 15 -3527
 clone 4840 3 -3564 4840 3 -3564 4844 6 -3569
 
 # destroy the reward loot chests
-setblock 4831 3 -3544 air
-setblock 4831 3 -3540 air
+setblock 4831 3 -3544 air replace
+setblock 4831 3 -3540 air replace
 
 # set some loot boxes (chests, barrels etc)
 # long house
