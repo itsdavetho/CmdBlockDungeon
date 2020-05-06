@@ -1,0 +1,4 @@
+summon skeleton 4831 2 -3550 {HandItems:[{Count:1,id:diamond_sword,tag:{Enchantments:[{id:sharpness,lvl:5},{id:unbreaking,lvl:3}]}},{}],ArmorItems:[{},{},{},{Count:1,id:carved_pumpkin}],CustomName:"\"Bartok's #2\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999},{Id:5,Amplifier:1,Duration:999999},{Id:8,Amplifier:0,Duration:999999},{Id:10,Amplifier:1,Duration:999999},{Id:21,Amplifier:0,Duration:999999},{Id:22,Amplifier:0,Duration:999999},{Id:26,Amplifier:0,Duration:999999}]}
+particle minecraft:smoke 4831 2 -3550 2 2 2 1 200
+# set the block back to diorite so the spawn for this mob may be queued again 
+setblock 4832 11 -3542 diorite

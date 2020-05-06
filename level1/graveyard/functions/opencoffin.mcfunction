@@ -1,3 +1,0 @@
-execute if block 4845 7 -3566 minecraft:spruce_trapdoor[open=true] unless entity @s[ nbt= { Inventory: [ { tag: {garzonstrident: 1}  } ] } ] unless entity @e[name="Sir Garzon"] as @s run function graveyard:summongarzon
-execute run schedule function graveyard:closecoffin 3s
-# execute if block 4845 7 -3566 minecraft:spruce_trapdoor[open=true] as @a[x=4840,y=5,z=-3574,dx=9,dy=4,dz=13] run function graveyard:opencoffin
