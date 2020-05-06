@@ -1,0 +1,3 @@
+use this command: 
+
+minecraft:summon armor_stand <X> <Y> <Z> {Invisible:1,Invulnerable:1,CustomName:"\"YOUR CUSTOM MESSAGE\"",CustomNameVisible:1,NoGravity:1,Marker:1b,Small:1,Tags:"YOUR TAG"}
