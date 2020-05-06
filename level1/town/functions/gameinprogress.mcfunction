@@ -11,7 +11,7 @@ execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run spawnpoint @s 4810 17
 # set sidebar etc
 execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run team join red @s
 scoreboard objectives setdisplay sidebar.team.red level1players
-execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run scoreboard objectives setdisplay belowName dungeonDeaths
+scoreboard objectives setdisplay belowName dungeonDeaths
 
 # inform the player the game is now in Progress
 tellraw @s "Sorry friend, this game is in progress!"

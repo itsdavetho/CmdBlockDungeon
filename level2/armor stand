@@ -1,0 +1,1 @@
+/minecraft:summon armor_stand ~ ~2 ~ {Invisible:1,Invulnerable:1,CustomName:"\"Where am I? I'd better get out of here!\"",CustomNameVisible:1,NoGravity:1,Marker:1b,Small:1,Tags:"level2",Marker:1b}
