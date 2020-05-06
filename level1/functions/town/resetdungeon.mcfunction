@@ -81,3 +81,6 @@ clone 4807 15 -3583 4807 15 -3583 4804 20 -3580 replace
 # "open" the doors
 setblock 4805 19 -3580 minecraft:light_weighted_pressure_plate
 setblock 4806 19 -3580 minecraft:light_weighted_pressure_plate
+
+# finally, disable force loading of the chunks
+forceload add 4804 -3578 5108 -3347

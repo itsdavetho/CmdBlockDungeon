@@ -1,3 +1,5 @@
+# set the chunks to force load incase all players disappear and we still need to restart [forceload add x1 y1 x2 y2]
+forceload add 4804 -3578 5108 -3347
 # place the "Game In Progress" sign
 clone 4806 15 -3583 4806 15 -3583 4804 20 -3580 replace
 # remove the pressure plates 
