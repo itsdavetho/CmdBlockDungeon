@@ -3,19 +3,11 @@ execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run function level1:town/
 # turn off the sidebar display
 scoreboard objectives setdisplay sidebar.team.red
 
-# kill any special mobsm-- this will have to be adjusted for #ADDMYTHICMOBS
-kill @e[name="Tiernan"]
-kill @e[name="Sir Garzon"]
-kill @e[name="Bartok the Zombie"]
-kill @e[name="Bartok the Fish"]
-kill @e[name="Bartok the Illusioner"]
-kill @e[name="Bartok's #3"]
-kill @e[name="Bartok's #2"]
-kill @e[name="Bartok's #1"]
-kill @e[name="Garzon's Pal"]
-kill @e[name="Bartok's Zombie"]
-kill @e[name="Bartok's Skelly"]
-kill @e[name="Bartok's Creeper"]
+# kill all mobs in the arena
+kill @e[type=!minecraft:player,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
+
+# remove any ground items in the arena to prevent reusing quest items by dropping them
+kill @e[type=item,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
 
 # close the fountain
 fill 4845 6 -3541 4843 4 -3543 stone replace
@@ -74,9 +66,6 @@ setblock 4831 4 -3542 minecraft:stone_button[face=floor,facing=west,powered=fals
 # destroy the reward loot chests
 setblock 4831 3 -3544 air replace
 setblock 4831 3 -3540 air replace
-
-# remove any ground items in the arena to prevent reusing quest items by dropping them
-kill @e[type=item,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
 
 # place the "Game Ready" sign
 clone 4807 15 -3583 4807 15 -3583 4804 20 -3580 replace

@@ -15,7 +15,6 @@ execute unless entity @e[name="Bartok the Fish"] if score @s level1boss matches 
 execute unless entity @e[name="Bartok the Zombie"] if score @s level1boss matches 2 as @s run function level1:bosseslair/thirdform
 execute unless entity @e[name="Bartok the Illusioner"] if score @s level1boss matches 3 as @s run function level1:bosseslair/victory
 
-# set up the tick to run once a second
-execute unless score @s level1boss matches 4.. run schedule function level1:bosseslair/bosstick 1s
-
+# reset timer after 20 ticks- 1 second
+scoreboard players reset @s bossTimer
 # execute unless entity @e[name="Bartok the Zombie"] if score @s level1boss matches 2 as @s run function level1:bosseslair/thirdform
