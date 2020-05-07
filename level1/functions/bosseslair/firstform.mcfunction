@@ -6,11 +6,8 @@ execute unless entity @e[name="Bartok the Fish"] run tellraw @s "The ancient bei
 
 execute unless entity @e[name="Bartok the Fish"] run summon guardian 4826 4 -3542 {PersistenceRequired:1,CustomName:"\"Bartok the Fish\"",ActiveEffects:[{Id:1,Amplifier:1,Duration:999999},{Id:5,Amplifier:1,Duration:999999},{Id:8,Amplifier:0,Duration:999999},{Id:10,Amplifier:1,Duration:999999},{Id:21,Amplifier:0,Duration:999999}]}
 
-# we can overlap music to create new sounds
 stopsound @s
-playsound minecraft:music.dragon music @s ~ ~ ~ 1 2 1
-playsound minecraft:music.dragon music @s ~ ~ ~ 1 0.1 1
-playsound minecraft:music.end music @s ~ ~ ~ 1 2 1
+playsound minecraft:music.end player @s
 
 # remove the button that spawns him
 setblock 4831 4 -3542 air

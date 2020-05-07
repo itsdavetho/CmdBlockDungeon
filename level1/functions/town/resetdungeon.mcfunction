@@ -75,6 +75,9 @@ setblock 4831 4 -3542 minecraft:stone_button[face=floor,facing=west,powered=fals
 setblock 4831 3 -3544 air replace
 setblock 4831 3 -3540 air replace
 
+# remove any ground items in the arena to prevent reusing quest items by dropping them
+kill @e[type=item,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
+
 # place the "Game Ready" sign
 clone 4807 15 -3583 4807 15 -3583 4804 20 -3580 replace
 
