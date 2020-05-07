@@ -11,8 +11,10 @@ scoreboard players reset @s tiernanspick
 scoreboard players reset @s tiernansaxe
 scoreboard players reset @s tiernanshoe
 scoreboard players reset @s tiernansrod
+scoreboard players reset @s tiernanScene
 scoreboard players reset @s garzonkilled
 scoreboard players reset @s level1boss
+scoreboard players reset @s level1players
 scoreboard players reset @s dungeonDeaths
 scoreboard players reset @s dungeonLeftGame
 

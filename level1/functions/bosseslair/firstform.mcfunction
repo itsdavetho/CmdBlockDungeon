@@ -11,3 +11,6 @@ playsound minecraft:music.end player @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22]
 
 # remove the button that spawns him
 setblock 4831 4 -3542 air
+
+# initiate the boss tick
+execute as @s run function level1:bosseslair/bosstick

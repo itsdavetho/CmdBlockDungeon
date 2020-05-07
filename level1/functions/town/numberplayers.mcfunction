@@ -7,6 +7,6 @@ scoreboard players reset @s dungeonLeftGame
 # increase scoreboard by one for each player in arena
 execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run scoreboard players add @s level1players 1
 # if the count is more than 2 they cant play
-execute if entity @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231,scores={level1players=2..},x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] as @s run function level1:town/gameinprogress
+execute if entity @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231,scores={level1players=2..}] as @s run function level1:town/gameinprogress
 # command block
 # execute if entity @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] as @a[x=4804,y=18,z=-3582,dx=3,dy=2,dz=2] unless score @s inLobby matches 1 unless block 4806 19 -3580 air run function level1:town/numberplayers

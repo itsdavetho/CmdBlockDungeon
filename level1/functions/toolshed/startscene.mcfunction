@@ -1,5 +1,3 @@
-stopsound @a[x=4858,y=15,z=-3510,dx=4,dy=3,dz=3]
-
 # reset the chest items 
 data modify block 4861 16 -3508 Items set value []
 
