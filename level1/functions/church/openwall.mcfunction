@@ -1,7 +1,7 @@
 # thunder for the wall opening
-execute if block 4865 17 -3527 iron_block run playsound minecraft:entity.lightning_bolt.thunder block @a[x=4862,y=14,z=-3531,dx=14,dy=15,dz=10] 4865 17 -3527 1 0.1 1
+execute if block 4865 17 -3527 iron_block run playsound minecraft:entity.lightning_bolt.thunder block @a[x=4862,y=14,z=-3531,dx=14,dy=15,dz=10] 4865 17 -3527 1 0.5 1
 # make some particles
-execute if block 4865 17 -3527 iron_block run particle minecraft:explosion 4865 15 -3526 2 2 2 1 10
+execute if block 4865 17 -3527 iron_block run particle minecraft:explosion 4867.00 15.85 -3525.53 2 2 2 1 10
 # remove the wall
 execute if block 4865 17 -3527 iron_block run fill 4865 17 -3527 4865 15 -3525 air replace
 # reset the chest

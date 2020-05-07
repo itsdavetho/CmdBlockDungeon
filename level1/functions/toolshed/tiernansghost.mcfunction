@@ -1,5 +1,4 @@
 # play some sound
-stopsound @a[x=4858,y=15,z=-3510,dx=4,dy=3,dz=3]
 playsound minecraft:music_disc.11 player @a[x=4858,y=15,z=-3510,dx=4,dy=3,dz=3]
 playsound minecraft:entity.evoker.prepare_summon block @a[x=4858,y=15,z=-3510,dx=4,dy=3,dz=3] 4860 16 -3510 1 2 1
 # make some smoke

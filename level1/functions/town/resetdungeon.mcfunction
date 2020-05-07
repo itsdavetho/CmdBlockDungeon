@@ -26,7 +26,7 @@ setblock 4842 2 -3542 air
 fill 4874 18 -3523 4871 15 -3522 air replace
 fill 4872 19 -3522 4875 19 -3523 minecraft:cobblestone replace
 # close the wall and reset the chest
-setblock 4875 21 -3530 lever[powered=true,face=wall,facing=west]
+setblock 4875 21 -3530 stone_button[powered=false,face=wall,facing=west]
 fill 4865 17 -3527 4865 15 -3525 minecraft:iron_block replace
 data modify block 4866 12 -3527 Items set value []
 

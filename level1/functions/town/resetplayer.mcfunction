@@ -20,7 +20,7 @@ function level1:town/numberplayers
 
 # remove any quest items -- trident will need to be adjusted for #ADDMYTHICMOBS
 clear @s minecraft:written_book{tiernansjournal:1}
-clear @s minecraft:honey_bottle{leveroil:1}
+clear @s minecraft:honey_bottle{buttonoil:1}
 clear @s minecraft:trident{garzonstrident:1}
 clear @s minecraft:nether_star{unholysymbol: 1}
 clear @s minecraft:diamond_pickaxe{tiernanspick: 1}

@@ -1,2 +1,2 @@
 tellraw @s "My inventory is full. Tiernan dropped the oil on the ground."
-summon minecraft:item 4859.71 17 -3508.46 {Item:{id:honey_bottle, Count: 1b, tag: {leveroil:1, display: {Name:'[{"text":"Bottle of Oil","italic":true}]',Lore:['[{"text":"Tiernan said the church lever can be fixed with this","italic":false}]']}}}}
+summon minecraft:item 4859.71 17 -3508.46 {Item:{id:honey_bottle, Count: 1b, tag: {buttonoil:1, display: {Name:'[{"text":"Bottle of Oil","italic":true}]',Lore:['[{"text":"Tiernan said the church button can be fixed with this","italic":false}]']}}}}

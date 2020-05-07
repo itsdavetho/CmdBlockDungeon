@@ -1,7 +1,7 @@
 execute unless entity @e[name="Bartok the Zombie"] run particle minecraft:smoke 4830 3 -3543 2 2 2 1 200
-execute unless entity @e[name="Bartok the Zombie"] run playsound minecraft:block.portal.travel player @s 4830 3 -3543 1 2 1
-execute unless entity @e[name="Bartok the Zombie"] run tellraw @s "Bartok shifted forms into a zombie!"
-execute unless entity @e[name="Bartok the Zombie"] run scoreboard players set @s level1boss 2
+execute unless entity @e[name="Bartok the Zombie"] run playsound minecraft:block.portal.travel player @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] 4830 3 -3543 1 2 1
+execute unless entity @e[name="Bartok the Zombie"] run tellraw @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] "Bartok shifted forms into a zombie!"
+execute unless entity @e[name="Bartok the Zombie"] run scoreboard players set @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] level1boss 2
 
 # Bartok the Zombie's minions do not respawn so we do not need them in the tick
 

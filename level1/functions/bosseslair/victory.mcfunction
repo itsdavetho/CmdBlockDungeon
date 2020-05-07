@@ -1,8 +1,8 @@
 # inform the player they have achieved victory
-tellraw @s "I have slayed the vicious Bartok!"
+tellraw @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] "I have slayed the vicious Bartok!"
 
 # a message to inform the fountain is open
-tellraw @s "I think I heard the fountain open back up."
+tellraw @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] "I think I heard the fountain open back up."
 fill 4845 6 -3541 4843 4 -3543 water destroy
 
 # place the loot
@@ -16,6 +16,6 @@ summon firework_rocket 4826 1 -3537 {LifeTime:30,FireworksItem:{id:firework_rock
 summon firework_rocket 4831 3 -3542 {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:3,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;1973019,3887386,5320730,8073150,2651799,14602026,6719955,15435844],FadeColors:[I;11743532,5320730,14188952,14602026,6719955,15790320]},{Type:1,Flicker:0,Trail:0,Colors:[I;1973019,3887386],FadeColors:[I;1973019,3887386]}]}}}}
 
 # scoreboard update
-scoreboard players set @s level1boss 4
-scoreboard players add @s rewardPoints 25
-tellraw @s "You earned 25 reward points for completing this dungeon!"
+scoreboard players set @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] level1boss 4
+scoreboard players add @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] rewardPoints 25
+tellraw @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] "You earned 25 reward points for completing this dungeon!"
