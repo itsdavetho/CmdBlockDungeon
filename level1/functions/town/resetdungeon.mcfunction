@@ -4,7 +4,7 @@ execute as @a[x=4804,dx=304,y=0,dy=165,z=-3578,dz=231] run function level1:town/
 scoreboard objectives setdisplay sidebar.team.red
 
 # kill all mobs in the arena
-kill @e[type=!minecraft:player,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
+kill @e[type=!minecraft:player,type=!minecraft:armor_stand,type=!minecraft:item_frame,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]
 
 # remove any ground items in the arena to prevent reusing quest items by dropping them
 kill @e[type=item,x=4804,dx=304,y=0,dy=165,z=-3578,dz=231]

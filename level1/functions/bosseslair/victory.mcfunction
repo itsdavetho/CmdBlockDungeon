@@ -18,4 +18,6 @@ summon firework_rocket 4831 3 -3542 {LifeTime:30,FireworksItem:{id:firework_rock
 # scoreboard update
 scoreboard players set @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] level1boss 4
 scoreboard players add @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] rewardPoints 25
-tellraw @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] "You earned 25 reward points for completing this dungeon!"
+scoreboard players set @a[x=4820,dx=22,y=1,dy=6,z=-3552,dz=22] level1 1
+
+tellraw @s "You earned 25 reward points for completing this dungeon!"
